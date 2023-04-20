@@ -1,9 +1,20 @@
 # CS 640 Project_Team_16
 ## Small Object Detection Challenge for Spotting Birds @MVA2023
 
+# Follow these steps to run our code.
+In this README, we provide a step-by-step guide on how to use our repository for training and running the small bird object detection model. Follow these instructions to set up the environment and start training the detector effectively.
+
+Step 1: Choose your environment. You can run the provided Jupyter notebook in the repository or execute the code on your local system. We recommend using the Jupyter notebook for a seamless experience.
+
+Step 2: Clone the GitHub repository. After cloning, replace the configuration files in the original repository with the ones from our repository. This step is crucial, as our configuration files have been fine-tuned and optimized for better performance and integration.
+
+Step 3: Provide the pre-trained weights in one of the code cells within the Jupyter notebook. The pre-trained weights will be normalized, allowing you to use these weights to train the detector. The estimated training time for the detector is approximately six days if you run it on the Drone2021 dataset and around 24 hours for the Train-set1 dataset.
+
+By following these steps, you will successfully set up and run our small bird object detection model. To download the necessary weights, please refer to the provided links in the repository. Additionally, you can find dataset links within the code for easy access. We hope this guide helps you effectively use our repository. Thank you!
+
 # Contents
 
-Code: This directory contains the project code in both Jupyter Notebook (.ipynb) and Python script (.py) formats. It also includes configuration and base files required for the implementation of bird detection for the competition.
+Models: This directory comprises different models that we experimented with to obtain the best results for the small bird object detection task. You can find three models within this directory: Cascade-RCNN, RetinaNet, and Baseline. To run the respective models, follow the steps outlined in the README guide provided above.
 
 Data: The data used for this project is not included in the repository due to size limitations. However, you can access it from the following Google Drive link: https://drive.google.com/drive/folders/1NWt8lap3spKKK_trOAzkdXAxlEhv2t0m?usp=sharing
 
@@ -26,16 +37,18 @@ data
 ## Repo Structure
 
 ```
-├── code
-│   ├── project_640.ipynb
-│   ├── project_640.py
-│   ├── config
-│       ├── base
-│           ├── coco_detection.py
-│           ├── faster_rcnn_r50_fpn.py
-│           └── faster_rcnn_r50_fpn_1x_coco.py
-│       └── faster_rcnn_r50_fpn_1x_bird.py
+├── models
+│   ├── cascade_rcnn
+│   │   ├── notebook.ipynb
+│   │   └── config
+│   ├── retinanet
+│   │   ├── notebook.ipynb
+│   │   └── config
+│   └── baseline
+│       ├── notebook.ipynb
+│       └── config
 └── data
+
 ```
 
 ## Pre-Trained Weights
@@ -43,15 +56,6 @@ data
 You can download the pre-trained weights using the following link:
 **(https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_caffe_fpn_mstrain_3x_coco/faster_rcnn_r50_caffe_fpn_mstrain_3x_coco_20210526_095054-1f77628b.pth)**
 
-Usage
-
-1. Clone this repository to your local machine.
-
-2. Download the dataset from the provided Google Drive link and place it in the appropriate directory.
-
-3. Install the required dependencies by running pip install -r requirements.txt.
-
-4. Run the Jupyter Notebook or Python script to train and evaluate the bird detection model.
 
 License
 
