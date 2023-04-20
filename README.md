@@ -55,6 +55,10 @@ data
 
 You can download the pre-trained weights using the following link:
 **(https://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_caffe_fpn_mstrain_3x_coco/faster_rcnn_r50_caffe_fpn_mstrain_3x_coco_20210526_095054-1f77628b.pth)**
+# CASCADE-RCNN: **(https://download.openmmlab.com/mmdetection/v2.0/cascade_rcnn/cascade_rcnn_r101_fpn_1x_coco/cascade_rcnn_r101_fpn_1x_coco_20200317-0b6a2fbf.pth)**
+# RETINA-NET: **(https://download.openmmlab.com/mmdetection/v2.0/retinanet/retinanet_r101_fpn_1x_coco/retinanet_r101_fpn_1x_coco_20200130-7a93545f.pth)**
+
+If you want to access the adjusted weights directly you can find them in the below Drive Link under checkpoint folder: **(https://drive.google.com/drive/folders/1OsyRb97yPafym4_hgx7iAa-sXTRS8Ygf?usp=sharing)**
 
 
 License
